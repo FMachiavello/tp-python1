@@ -15,6 +15,9 @@ for i in range(6):
 
 #3)
 
+if v > 1:
+   print()
+
 
     
 
