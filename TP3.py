@@ -1,5 +1,6 @@
 #1)
 
+""" Complete """
 palabra = str(input("Ingrese una palabra: "))
 for i in range(1,1001):
     print(palabra, end=" ")
@@ -8,13 +9,11 @@ print()
 
 #2)
 
-print("0  |  0")
-for i in range(6):
-    for x in range(7):
-        print(x," | ",i + 1)
+""" Macha """
 
 #3)
 
+""" En este faltan cosas """
 n = int(input("Ingrese un numero: "))
 suma = 0
 for i in range(1, n + 1):
@@ -24,22 +23,35 @@ print(suma)
 
 #4)
 
-c1 = []
-c2 = []
-c3 = []
-for i in range(2):
-    a = int(input("Ingrese una coordenada x y luego una y: "))
-    c1.append(a)
-    b = int(input("Ingrese una coordenada x y luego una y: "))
-    c2.append(b)
-    c = int(input("Ingrese una coordenada x y luego una y: "))
-    c3.append(c)
+""" Macha """
 
+#6)
 
+""" Diego """
 
+#7)
 
-    
+""" Complete """
+def dias(num):
+    cont = num / 7
+    sem = num - (7 * round(cont))
+    if num <= 366 and num > 0:
+        if sem == 1:
+            print("Lunes")
+        elif sem == 2:
+            print("Martes")
+        elif sem == 3:
+            print("Miercoles")
+        elif sem == 4:
+            print("Jueves")
+        elif sem == 5:
+            print("Viernes")
+        elif sem == 6:
+            print("Sabado")
+        elif sem == 7:
+            print("Domingo")
+    else: 
+        print("Numero incorrecto")
 
-                                                                                                                                                                                                                                        
-                                                                                                                                                                                                                                                
+#8)   
 
