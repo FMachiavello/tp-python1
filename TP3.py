@@ -13,7 +13,7 @@ print()
 
 #3)
 
-""" En este faltan cosas """
+""" Faltan cosas """
 n = int(input("Ingrese un numero: "))
 suma = 0
 for i in range(1, n + 1):
@@ -24,10 +24,13 @@ print(suma)
 #4)
 
 """ Macha """
+#5)
+
+""" Diego """
 
 #6)
 
-""" Diego """
+""" Nose quien """
 
 #7)
 
@@ -53,5 +56,12 @@ def dias(num):
     else: 
         print("Numero incorrecto")
 
-#8)   
+#8)
+
+""" Nose quien """
+
+#9)   
+
+""" Nose quien """
+
 
