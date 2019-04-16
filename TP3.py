@@ -1,10 +1,10 @@
 #1)
 
-def milPlabras(palabra):
+def milPalabras(palabra):
     for i in range(1,1001):
         """ Uso el parametro end para que deje un espacio cuando imprima las 
         palabras en la misma linea """
-        print(palabra, end=" ")
+        print(palabra, end=" ")   
 
 #2)
 
