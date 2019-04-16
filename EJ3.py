@@ -3,4 +3,4 @@ def numTriangular(n):
     for i in range(1, n + 1):
         cont = i
         suma = suma + cont
-        print(cont," - ",suma)
+        print(cont, " - ", suma)

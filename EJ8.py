@@ -1,19 +1,21 @@
 def numRomanos(n):
     """ Variable n es la cantidad de numeros ingresados """
-    """ Declaro listas para asignar un numero romano dependiendo la longitud del numero """
-    unidad = ["", "I", "II", "III", "IV", "V", "VI", "VII","VIII","IX"]
-    dec = ["", "X","XX","XXX","XL", "L", "LX", "LXX", "LXXX", "XC"]
+    """ Declaro listas para asignar un numero romano dependiendo la longitud
+    del numero """
+    unidad = ["", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"]
+    dec = ["", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"]
     cent = ["", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"]
     mil = ["", "M", "MM", "MMM", "IV/", "V/", "VI/", "VII/", "VIII/", "IX/"]
-    dmil = ["", "X/", "XX/", "XXX/", "XL/", "L/", "LX/", "LXX/", "LXXX/", "XC/"]
-    cmil = ["", "C/", "CC/", "CCC/", "CD/", "D/", "DC/", "DCC/", "DCCC/", "CM/"]
-    """ Uso el modulo de 10 de n para que recorra los index de las listas """
+    dmil = ["", "X/", "XX/", "XXX/", "XL/", "L/", "LX/", "LXX/", "LXXX/", """
+    XC/"""]
+    cmil = ["", "C/", "CC/", "CCC/", "CD/", "D/", "DC/", "DCC/", "DCCC/", """
+    CM/"""]
     u = n % 10
     d = int(n // 10) % 10
     c = int(n // 100) % 10
     m = int(n // 1000) % 10
     dm = int(n // 10000) % 10
-    cm = int(n // 100000) 
+    cm = int(n // 100000)
     if n > 1000000:
         print("Limite 1000000")
     elif n == 1000000:
