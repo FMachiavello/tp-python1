@@ -1,21 +1,18 @@
 def evaluaciones():
-    """Determina si un alumno esta aprobado o desaprobado
-    dependiendo el porcentaje necesario para aprobar"""
-    """Muestra el porcentaje de preguntas correctas"""
-    aprobar = ""
-    correctas = ""
-    ejercicios = ""
-    while correctas != "*" and ejercicios != "*" and aprobar != "*":
-        ejercicios = input("¿Cuántos ejercicios tiene la evaluación?: ")
-        aprobar = input("¿Cuál es el porcentaje necesario para aprobar?: ")
-        correctas = input("¿Cuántas son correctas?: ")
-        por = 100 * int(correctas) / ejercicios
-        if por >= aprobar:
-            print(round(por, 2), "%")
-            print("Aprobado")
-        elif por < aprobar:
-            print(round(por, 2), "%")
-            print("Desaprobado")
-        correctas = input("""¿Cuántas son correctas?
-        (Ingrese '*' para finalizar): """)
+    ejercicios = input("¿Cuántos ej. tiene la evaluación?('*' finalizar): ")
+    while ejercicios != "*":
+        aprobar = input("¿Con que porcentaje se apruebar?('*'): ")
+        while aprobar != "*":
+            correctas = input("¿Cuántas son correctas?('*'): ")
+            while correctas != "*":
+                por = 100 * int(correctas) / int(ejercicios)
+                if por >= int(aprobar):
+                    print(round(por, 2), "%")
+                    print("Aprobado")
+                elif por < int(aprobar):
+                    print(round(por, 2), "%")
+                    print("Desaprobado")
+                correctas = input("¿Cuántas son correctas?('*' finalizar): ")
+                if correctas == "*":
+                    return
 evaluaciones()
