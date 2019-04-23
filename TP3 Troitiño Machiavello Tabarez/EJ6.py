@@ -1,5 +1,3 @@
-
-
 import math
 a = float(input("Ingrese a "))
 b = float(input("Ingrese b "))
@@ -20,15 +18,22 @@ def maxMin(a, b, c):
         print("a no puede valer 0 ")
 maxMin(a, b, c)
 
+a = float(input("Ingrese a "))
+b = float(input("Ingrese b "))
+c = float(input("Ingrese c "))
+
 
 def raices(a, b, c):
     """Calcula las raices de una funcion cuadratica"""
     if a == 0:
         print("a no puede valer 0")
     else:
-        raizmas = ((-b + math.sqrt((b ** 2) - (4 * a * c))) / (2 * a))
-        raizmenos = ((-b - math.sqrt((b ** 2) - (4 * a * c))) / (2 * a))
-        print("Las raices son {", raizmas, ",", raizmenos, "}")
+        if (b ** 2) - (4 * a * c) < 0:
+            print("No tiene raices")
+        else:
+            raizuno = ((-b + math.sqrt((b ** 2) - (4 * a * c))) / (2 * a))
+            raizdos = ((-b - math.sqrt((b ** 2) - (4 * a * c))) / (2 * a))
+            print("Las raices son {", raizmas, ",", raizmenos, "}")
 raices(a, b, c)
 
 pendiente = float(input("Ingrese la pendiente de la recta 1 "))
@@ -44,5 +49,6 @@ def interseccion(pendiente, origen, pendiente2, origen2):
     else:
         resultadox = origen - origen2 / pendiente2 - pendiente
         resultadoy = pendiente * resultadox + origen
-        print("La interseccion se encuentra en (", resultadox, resultadoy, ")")
+        print("La interseccion se encuentra en",
+              "("resultadox,  ", ", resultadoy, ")")
 interseccion(pendiente, origen, pendiente2, origen2)
