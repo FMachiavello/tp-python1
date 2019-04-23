@@ -31,9 +31,12 @@ def raices(a, b, c):
         if (b ** 2) - (4 * a * c) < 0:
             print("No tiene raices")
         else:
-            raizuno = ((-b + math.sqrt((b ** 2) - (4 * a * c))) / (2 * a))
-            raizdos = ((-b - math.sqrt((b ** 2) - (4 * a * c))) / (2 * a))
-            print("Las raices son {", raizmas, ",", raizmenos, "}")
+            if (b ** 2) - (4 * a * c) > 0:
+                raizuno = ((-b + math.sqrt((b ** 2) - (4 * a * c))) / (2 * a))
+                raizdos = ((-b - math.sqrt((b ** 2) - (4 * a * c))) / (2 * a))
+                print("Las raices son {", raizmas, ",", raizmenos, "}")
+                else:
+                    "No tiene raices"
 raices(a, b, c)
 
 pendiente = float(input("Ingrese la pendiente de la recta 1 "))
