@@ -1,5 +1,5 @@
 def domino():
-    """ Devuelve todas las 28 fichas del domino. """
+    """ Devuelve todas las 28 fichas del domino. Este codigo separa la parte superior de la inferior para poder mostrar la ficha tradicional."""
     fichas_inferior = 0     # La parte inferior empieza en 0.
     for fichas_superior in range(0, 28):
         if fichas_superior <= 6:   # Las fichas del cero son 7.
